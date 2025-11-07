@@ -1,0 +1,19 @@
+/* i) Headings: normal font style and 120% size */
+h1, h2{
+  font-style: normal;
+  font-size: 120%;
+}
+
+/* ii) Class 'arial' for paragraph */
+.arial {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-indent: 3cm;
+}
+
+/* iii) Background color and horizontal background image */
+body {
+  background-color: orange;
+  background-image: url("bike.jpg");
+  background-repeat: repeat-x; /* Repeat only horizontally */
+}

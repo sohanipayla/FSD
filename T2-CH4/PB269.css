@@ -1,0 +1,11 @@
+/* i) All headers normal font and size 150% */
+h1, h2 {
+  font-style: normal;
+  font-size: 150%;
+}
+
+/* ii) Paragraphs in Arial font and bold style */
+p {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}

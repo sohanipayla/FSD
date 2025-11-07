@@ -1,0 +1,18 @@
+/* 1) Style the first line of paragraph */
+p::first-line {
+  color: green;
+  font-style: italic;
+}
+
+/* 2) Change background color of selected heading text */
+h1::selection {
+  background-color: grey;
+  color: white; 
+}
+
+/* 3) Style ordered list */
+ol {
+  list-style-type: upper-roman; 
+  color: green;
+  font-size: 30px;
+}
