@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    width: 100%;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Table background colors */
+.table1 { background: blue; color: white; }
+.table2 { background: green; color: white; }
+
+/* Borders */
+table, th, td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+/* ---- RESPONSIVE PORTRAIT MODE ---- */
+@media screen and (orientation: portrait) {
+    .table1 { background: green; } 
+    .table2 { background: blue; }  
+
+    .container {
+        flex-direction: column; /* tables stack vertically */
+    }
+
+    table {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- TABLE 1 -->
+    <table class="table1">
+        <tr><th>A1</th><th>B1</th><th>C1</th></tr>
+        <tr><td>10</td><td>20</td><td>30</td></tr>
+        <tr><td>40</td><td>50</td><td>60</td></tr>
+    </table>
+    <!-- TABLE 2 -->
+    <table class="table2">
+        <tr><th>A2</th><th>B2</th><th>C2</th></tr>
+        <tr><td>70</td><td>80</td><td>90</td></tr>
+        <tr><td>11</td><td>22</td><td>33</td></tr>
+    </table>
+</div>
+</body>
+</html>

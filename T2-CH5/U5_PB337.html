@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.banner {
+    width: 100%;
+    height: 80px;
+    background: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+.banner p {
+    position: absolute;
+    left: 0;
+    font-size: 40px;    
+    color: red;
+    font-weight: bold;
+    animation: moveText 5s linear 1s infinite alternate;
+    /* 5s = duration 
+       1s = delay 
+       infinite = repeat 
+       alternate = forward then backward */
+}
+@keyframes moveText {
+    0%   { left: 0; }
+    100% { left: 80%; } /* move to right end */
+}
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <p> Big Sale! 50% Off on All Products! </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .banner {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+        background: lightgray;
+    }
+    h1 {
+        color: blue;
+        display: inline-block;
+        animation: rotateText 4s ease-in-out 3s; 
+    }
+    @keyframes rotateText {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-360deg); } /* counter-clockwise */
+        100% { transform: rotate(0deg); }  /* clockwise back */
+    }
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+    <h1>Welcome to My Banner</h1>
+</div>
+
+</body>
+</html>

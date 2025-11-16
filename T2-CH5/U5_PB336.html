@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 100px auto;
+        animation: growRotate 4s ease-in-out 3s infinite;
+    }
+
+    @keyframes growRotate {
+        0% {
+            transform: scale(1) rotate(0deg);
+            background: red;
+        }
+
+        50% {
+            transform: scale(2) rotate(1200deg);
+            background: yellow;
+        }
+
+        100% {
+            transform: scale(1) rotate(0deg);
+            background: red;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
