@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Tables with Color Rows</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        td, th {
+            font-size: 1rem; /* Font size in rem */
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Table 1 -->
+            <div class="col-md-3 col-sm-12">
+                <h5 class="text-center">Table 1</h5>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td>101</td><td>Rohit</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>102</td><td>Siya</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>103</td><td>Amit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Table 2 -->
+            <div class="col-md-3 col-sm-12">
+                <h5 class="text-center">Table 2</h5>
+                <table class="table table-hover table-sm">
+                    <thead>
+                        <tr>
+                            <th>Roll</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-danger">
+                            <td>11</td><td>Mumbai</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>22</td><td>Pune</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>33</td><td>Nagpur</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Table 3 -->
+            <div class="col-md-3 col-sm-12">
+                <h5 class="text-center">Table 3</h5>
+                <table class="table table-striped table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Item</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-light">
+                            <td>A1</td><td>Keyboard</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>B2</td><td>Mouse</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>C3</td><td>Monitor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Table 4 -->
+            <div class="col-md-3 col-sm-12">
+                <h5 class="text-center">Table 4</h5>
+                <table class="table table-hover table-dark table-sm">
+                    <thead>
+                        <tr>
+                            <th>Sr</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td>1</td><td>Red</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>2</td><td>Blue</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>3</td><td>Green</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
