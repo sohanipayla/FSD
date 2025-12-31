@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Fibonacci Series</title>
+  <script>
+    function Fibonacci(N) {
+      let a = 0, b = 1;
+      let result = [];
+      for (let i = 1; i <= N; i++) {
+        result.push(a);
+        let next = a + b;
+        a = b;
+        b = next;
+      }
+      console.log("First " + N + " Fibonacci numbers:", result.join(", "));
+    }
+    let N = Number(prompt("Enter N:"));
+    Fibonacci(N);
+  </script>
+</head>
+<body>
+  <h2>Fibonacci Series Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

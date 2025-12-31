@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Grade Students</title>
+  <script>
+    const students = [
+      { name: 'Alice', FSDMarks: 0 },
+      { name: 'Bob', FSDMarks: 0 },
+      { name: 'Charlie', FSDMarks: 0 }
+    ];
+    function gradeStudents(studentArray) {
+      for (let student of studentArray) {
+        let input = prompt(`Enter FSD marks for ${student.name}:`);
+        let marks = Number(input);
+        if (isNaN(marks)) {
+          alert("Invalid grade. Please enter a number.");
+          continue;
+        }
+        student.FSDMarks = marks;
+      }
+      let summary = "FSD Marks Summary:\n";
+      for (let student of studentArray) {
+        summary += `${student.name}: ${student.FSDMarks}\n`;
+      }
+      alert(summary);
+    }
+    gradeStudents(students);
+  </script>
+</head>
+<body>
+  <h2>Grade Students Program</h2>
+  <p>Follow the prompt to enter marks and see the summary.</p>
+</body>
+</html>

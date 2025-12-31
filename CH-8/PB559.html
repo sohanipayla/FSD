@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Calculate Discount</title>
+  <script>
+    function calculateDiscount(basePrice, discount = 10, ...additionalPrices) {
+      let total = basePrice;
+      for (let price of additionalPrices) {
+        total += price;
+      }
+      let discountedTotal = total * (1 - discount / 100);
+      return discountedTotal;
+    }
+    console.log(calculateDiscount(100)); // Only basePrice, 10% discount → 90
+    console.log(calculateDiscount(100, 20)); // basePrice, 20% discount → 80
+    console.log(calculateDiscount(100, 15, 50, 25)); // base + extra prices, 15% discount → 153
+  </script>
+</head>
+<body>
+  <h2>Calculate Discount Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

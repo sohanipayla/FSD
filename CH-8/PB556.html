@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Lucky Number Check</title>
+  <script>
+    function LuckyNumber(num) {
+      while (num >= 10) {
+        let sum = 0;
+        let digits = num.toString().split('');
+        for (let d of digits) {
+          sum += Number(d);
+        }
+        num = sum;
+      }
+      return num === 1;
+    }
+    let number = Number(prompt("Enter a number:"));
+    if (LuckyNumber(number)) {
+      console.log(number + " is a Lucky Number");
+    } else {
+      console.log(number + " is Not a Lucky Number");
+    }
+  </script>
+</head>
+<body>
+  <h2>Lucky Number Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

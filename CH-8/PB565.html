@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Monthly Transaction Summary</title>
+  <script>
+    const transactions = [
+      { category: 'Groceries', amount: 50, date: '2023-11-05' },
+      { category: 'Bills', amount: 200, date: '2023-10-28' },
+      { category: 'Groceries', amount: 75, date: '2023-11-12' },
+      { category: 'Entertainment', amount: 40, date: '2023-11-20' },
+      { category: 'Bills', amount: 150, date: '2023-11-15' }
+    ];
+    function summarizeMonthlyTransactions(data, month) { 
+      const monthlyData = data.filter(tx => tx.date.split('-')[1] === month);   // Filter transactions for the month
+      const summary = {};
+      for (let tx of monthlyData) {
+        if (summary[tx.category]) {
+          summary[tx.category] += tx.amount;
+        } else {
+          summary[tx.category] = tx.amount;
+        }
+      }
+      return summary;
+    }
+    const summary = summarizeMonthlyTransactions(transactions, '11');
+    console.log(summary);
+  </script>
+</head>
+<body>
+  <h2>Monthly Transaction Summary</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

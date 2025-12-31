@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>User Registration</title>
+  <script>
+    function registerUser() {
+      let username;
+      while (!username) {
+        username = prompt("Enter a username:");
+        if (username === null || username === "") {
+          username = null; // Force repeat
+        }
+      }
+      let password;
+      while (!password || password.length < 8) {
+        password = prompt("Enter a password (at least 8 characters):");
+      }
+      let confirmRegister = confirm(`Are you sure you want to register with this username and password?`); // Confirmation
+      if (!confirmRegister) {
+        alert("Registration canceled.");
+        return;
+      }
+      alert(`Registration successful!\nUsername: ${username}\nPassword: ${password}`);  // Success message
+    }
+    registerUser();
+  </script>
+</head>
+<body>
+  <h2>User Registration Program</h2>
+  <p>Follow the prompts to register.</p>
+</body>
+</html>

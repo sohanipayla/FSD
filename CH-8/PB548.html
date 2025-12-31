@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Odd Numbers Divisible by 7</title>
+  <script>
+    function OddDivisibleBy7(n) {
+      let count = 0;
+      let num = 1;
+      while (count < n) {
+        if (num % 2 !== 0 && num % 7 === 0) {
+          console.log(num);
+          count++;
+        }
+        num++;
+      }
+    }
+    let N = prompt("Enter value of N:");
+    N = Number(N)
+    OddDivisibleBy7(N);
+  </script>
+</head>
+<body>
+  <h2>First N Odd Numbers Divisible by 7</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

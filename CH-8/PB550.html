@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>First N Odd Numbers</title>
+  <script>
+    function Odd(N) {
+      let count = 0;
+      let num = 1;
+      while (count < N) {
+        if (num % 2 !== 0) {
+          console.log(num);
+          count++;
+        }
+        num++;
+      }
+    }
+    let N = prompt("Enter value of N:");
+    N = Number(N);
+    Odd(N);
+  </script>
+</head>
+<body>
+  <h2>First N Odd Numbers Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

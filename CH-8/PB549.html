@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+  function canPurchase(price, taxRate, balance) {
+    let totalCost = price + (price * taxRate) / 100;
+    if (balance >= totalCost) {
+      alert("Yes");
+    } else {
+      alert("No");
+    }
+  }
+  canPurchase(1000, 10, 1000);
+</script>
+    </head>
+    <body>
+  <p>Check output in console.</p>
+</body>
+</html>

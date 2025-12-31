@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Odd Position Characters</title>
+  <script>
+    function printOddPositionChars(str) {
+      let result = "";
+      for (let i = 0; i < str.length; i = i + 2) {
+        result = result + str[i] + " ";
+      }
+      return result;
+    }
+    let text = prompt("Enter a string:");
+    let output = printOddPositionChars(text);
+    console.log("Characters at odd positions:", output);
+  </script>
+</head>
+<body>
+  <h2>Odd Position Characters Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

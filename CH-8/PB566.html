@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Welcome Program</title>
+  <script>
+    // 1. Welcome message
+    alert("Welcome User");
+    // 2. Confirm to continue
+    const proceed = confirm("Do you want to continue?");
+    if (!proceed) {
+      alert("Goodbye");
+    } else {
+      // 3. Ask name
+      const name = prompt("Enter your name:");
+      alert(`Hello ${name}`);
+      // 4. Ask age
+      const age = Number(prompt("Enter your age:"));
+      if (age >= 18) {
+        alert("You are an adult!");
+      } else {
+        alert("You are a minor!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Welcome Program</h2>
+  <p>Follow the pop-ups to interact.</p>
+</body>
+</html>

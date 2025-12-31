@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Array & Object Loop</title>
+  <script>
+    const colors = ['red', 'green', 'blue'];
+    const car = { make: 'Toyota', model: 'Camry', year: 2022 };
+    console.log("Colors:"); 
+    for (let color of colors) { // Loop over array
+      console.log(color);
+    }
+    console.log("\nCar Details:"); 
+    for (let key in car) {  // Loop over object
+      console.log(`${key}: ${car[key]}`);
+    }
+  </script>
+</head>
+<body>
+  <h2>Array and Object Loop</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>User Age Message</title>
+  <script>
+    const users = [
+      { name: "Rahul", age: 25 },
+      { name: "Krishna", age: 16 }
+    ];
+    users.forEach(user => {
+      const message = `${user.name} is ${user.age}${user.age < 18 ? " (Minor)" : ""}.`;
+      console.log(message);
+    });
+  </script>
+</head>
+<body>
+  <h2>User Age Message</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

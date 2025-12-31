@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Special Numbers 1-100</title>
+  <script>
+    function reverseNumber(num) {
+      return Number(num.toString().split('').reverse().join(''));
+    }
+    function SpecialNumbers() {
+      for (let i = 1; i <= 100; i++) {
+        let square = i * i;
+        let revSquare = reverseNumber(square);
+        let revNum = reverseNumber(i);
+        let squareOfRev = revNum * revNum;
+        if (revSquare === squareOfRev) {
+          console.log(i);
+        }
+      }
+    }
+    SpecialNumbers();
+  </script>
+</head>
+<body>
+  <h2>Special Numbers 1-100</h2>
+  <p>Check output in console.</p>
+</body>
+</html>
+ <!-- logic: reverse(square(n)) === square(reverse(n)) -->

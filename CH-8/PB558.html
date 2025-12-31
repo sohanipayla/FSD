@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Filter Electronics Products</title>
+  <script>
+    const products = [
+      { name: 'Laptop', price: 1200, category: 'Electronics' },
+      { name: 'T-shirt', price: 25, category: 'Apparel' },
+      { name: 'Keyboard', price: 75, category: 'Electronics' },
+      { name: 'Jeans', price: 60, category: 'Apparel' }
+    ];
+    const filteredNames = products
+      .filter(product => product.category === 'Electronics' && product.price < 1000)
+      .map(product => product.name);
+    console.log(filteredNames);
+  </script>
+</head>
+<body>
+  <h2>Electronics Products Filter</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

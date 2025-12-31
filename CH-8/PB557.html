@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Perfect Number Check</title>
+  <script>
+    function PerfectNumber(num) {
+      let sum = 0;
+      for (let i = 1; i < num; i++) {
+        if (num % i === 0) {
+          sum += i;
+        }
+      }
+      return sum === num;
+    }
+    let number = Number(prompt("Enter a number:"));
+    if (PerfectNumber(number)) {
+      console.log(number + " is a Perfect Number");
+    } else {
+      console.log(number + " is Not a Perfect Number");
+    }
+  </script>
+</head>
+<body>
+  <h2>Perfect Number Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

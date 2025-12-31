@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Two Digit Calculation</title>
+  <script>
+    function calculatePower(num) {
+      let firstDigit = Math.floor(num / 10);
+      let secondDigit = num % 10;
+      let result = 1;
+      for (let i = 1; i <= secondDigit; i++) {
+        result = result * firstDigit;
+      }
+      return result;
+    }
+    let number = prompt("Enter a two digit number:");
+    number = Number(number);
+    let output = calculatePower(number);
+    console.log("Result:", output);
+  </script>
+</head>
+<body>
+  <h2>Two Digit Number Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

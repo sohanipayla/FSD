@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Character Occurrence</title>
+  <script>
+    function countOccurrence(str, ch) {
+      let count = 0;
+      for (let i = 0; i < str.length; i++) {
+        if (str[i] === ch) {
+          count++;
+        }
+      }
+      return count; // returns number
+    }
+    let text = "Sohani Payla";
+    let character = "a";
+    let result = countOccurrence(text, character);
+    console.log(result); // Output: 2
+  </script>
+
+</head>
+<body>
+  <h2>Character Occurrence Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>

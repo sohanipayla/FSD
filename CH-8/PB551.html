@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Palindrome Check</title>
+  <script>
+    function isPalindrome(str) {
+      let reversed = str.split('').reverse();
+      return str === reversed; 
+    }
+    let text = prompt("Enter a string:");
+    let result = isPalindrome(text);
+    if (result) {
+      console.log("Palindrome");
+    } else {
+      console.log("Not a Palindrome");
+    }
+  </script>
+</head>
+<body>
+  <h2>Palindrome Check Program</h2>
+  <p>Check output in console.</p>
+</body>
+</html>
