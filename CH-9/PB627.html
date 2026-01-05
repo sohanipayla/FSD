@@ -1,0 +1,16 @@
+<html>
+<body>
+    <h3>Press any key inside the box:</h3>
+    <input type="text" onkeydown="handleKeys(event)">
+    <script>
+        function handleKeys(event) {
+            // Task 2: Log any key pressed to the console
+            console.log("Key pressed: " + event.key);
+            // Task 1: Check if the pressed key is "Enter"
+            if (event.key === "Enter") {
+                alert("You pressed Enter!");
+            }
+        }
+    </script>
+</body>
+</html>

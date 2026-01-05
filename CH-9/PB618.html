@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>QuesrySelector</title>
+</head>
+<body>
+    <p class="text">Paragraph 1</p>
+    <p class="text">Paragraph 2</p>
+    <p class="text">Paragraph 3</p>
+    <p class="text">Paragraph 4</p>
+    <p class="text">Paragraph 5</p>
+    <div class="text">Div 1</div>
+    <div class="text">Div 2</div>
+    <div class="text">Div 3</div>
+    <div class="text">Div 4</div>
+    <div class="text">Div 5</div>
+    <script>
+        function updateParagraphs() {
+            // (a) Select all p tags with class 'text'
+            const paragraphs = document.querySelectorAll('p.text');
+            // (b) Append '(Updated)' to each element
+           paragraphs.forEach(p => p.innerText += " (Updated)");
+            // (c) Print the count of updated elements in console
+            console.log("Total updated elements:", paragraphs.length);
+        }
+        updateParagraphs();
+    </script>
+</body>
+</html>

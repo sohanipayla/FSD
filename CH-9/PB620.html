@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Image</title>
+</head>
+<body>
+    <div class="image-container"></div>
+    <div class="image-container"></div>
+    <div class="image-container"></div>
+    <script>
+        function insertImages() {
+            // 1. Select all divs with class 'image-container'
+            const containers = document.querySelectorAll('.image-container');
+            // 2. Different images
+            const imageUrls = [
+                "https://picsum.photos/200?random=1",
+                "https://picsum.photos/200?random=2",
+                "https://picsum.photos/200?random=3"
+            ];
+            // 3. Loop through each div
+            containers.forEach((div, index) => {
+                div.innerHTML = `<img src="${imageUrls[index]}" width="200" height="200">`;
+            });
+        }
+        insertImages();
+    </script>
+</body>
+</html>

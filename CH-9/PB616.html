@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>QuerySelector</title>
+</head>
+<body>
+    <p class="description">Item 1</p>
+    <p class="description">Item 2</p>
+    <p class="description">Item 3</p>
+    <script>
+        function updateItems() {
+            // 1. Select all elements with the class "description"
+            const items = document.querySelectorAll('.description');
+            // 2. Loop through each element to update them
+            items.forEach((element) => {
+                // Task 2: Change content to "Updated!" inside <strong> tag
+                element.innerHTML = "<strong>Updated!</strong>";
+                // Task 3: Add a title attribute
+                element.setAttribute('title', 'This item has been updated.');
+            });
+        }
+        updateItems();
+    </script>
+</body>
+</html>

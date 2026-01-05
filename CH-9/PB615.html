@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="main-title">Hello DOM!</h1>
+    <script>
+        function solveQuestion() {
+            // Task 1: Select the element
+            const heading = document.getElementById('main-title');
+            // Task 2: Change text content
+            heading.innerText = "DOM Manipulation is Fun!";
+            // Task 3: Change color to green
+            heading.style.color = "green";
+        }
+        solveQuestion();
+    </script>
+</body>
+</html>

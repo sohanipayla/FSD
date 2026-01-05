@@ -1,0 +1,28 @@
+<html>
+<body>
+    <button onclick="toggleBG()">Toggle Background</button>
+    <br><br>
+    <form id="myF" style="border: 2px solid black; padding: 10px;"
+          onmouseover="this.style.borderColor='green'"
+          onmouseout="this.style.borderColor='black'"
+          onsubmit="event.preventDefault(); alert('Form submitted successfully!')">
+        Username: 
+        <input type="text" 
+               oninput="this.style.color='red'" 
+               onchange="this.style.backgroundColor='yellow'">
+        <br><br>
+        Email: 
+        <input type="email" 
+               oninput="this.style.color='red'" 
+               onchange="this.style.backgroundColor='yellow'">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function toggleBG() {
+            let f = document.getElementById('myF');
+            f.style.backgroundColor = (f.style.backgroundColor === 'lightblue') ? 'white' : 'lightblue';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+    <p class="price-tag">150</p>
+    <p class="price-tag">80</p>
+    <p class="price-tag">220</p>
+    <p class="price-tag">95</p>
+    <script>
+        function highlightPrices() {
+            // 1. Select all elements with the class 'price-tag'
+            const priceElements = document.querySelectorAll('.price-tag')
+            // 2. Loop through each element
+            priceElements.forEach((el) => {
+                const price = Number(el.innerText)
+                // 3 & 4. Check price and apply colors
+                if (price < 100) {
+                    el.style.color = "green" // Less than 100
+                } else {
+                    el.style.color = "red"   // 100 or more
+                }
+            })
+        }
+        highlightPrices();
+    </script>
+</body>
+</html>

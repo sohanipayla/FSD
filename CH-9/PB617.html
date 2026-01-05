@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Image</title>
+</head>
+<body>
+    <img src="SD.png" id="product-image" alt="Watch-IMG">
+    <script>
+        function updateImage() {
+            // Task 1: Select the image element using its ID
+            const imgElement = document.getElementById('product-image');
+            // Task 2: Get the current src value and log it to the console
+            const currentSrc = imgElement.getAttribute('src');
+            console.log("Current Source:", currentSrc);
+            // Task 3: Change the image's source to the new path
+            imgElement.setAttribute('src', 'watch.jpg');
+            console.log("New Source has been set!");
+        }
+        updateImage();
+    </script>
+</body>
+</html>

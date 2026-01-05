@@ -1,0 +1,17 @@
+<html>
+<body>
+    <h1 id="msg">Mouse Button Check </h1>
+    <script>
+        document.onmousedown = function(event) {
+            const display = document.getElementById('msg');
+            // event.button: 0 = Left, 2 = Right
+            if (event.button === 0) {
+                display.innerText = "Left Clicked";
+            } 
+            else if (event.button === 2) {
+                display.innerText = "Right Clicked";
+            }
+        };
+    </script>
+</body>
+</html>

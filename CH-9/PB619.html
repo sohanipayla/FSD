@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        .light-mode { background-color: white; color: black; padding: 20px; }
+        .dark-mode { background-color: #333; color: white; padding: 20px; }
+    </style>
+</head>
+<body>
+    <button id="theme-toggle">Enable Dark Mode</button>
+    <div id="content-box" class="content light-mode">
+        <h1>My Awesome Page</h1>
+        <p>This is some content to demonstrate the toggle.</p>
+    </div>
+    <script>
+        // Task 1: Select the elements
+        const btn = document.getElementById('theme-toggle');
+        const box = document.getElementById('content-box');
+        // Task 2: Add click event listener
+        btn.addEventListener('click', () => { 
+            // Task 3: Toggle classes
+            box.classList.toggle('dark-mode');
+            box.classList.toggle('light-mode');
+            // Task 4: Update button text based on current theme
+            if (box.classList.contains('dark-mode')) {
+                btn.innerText = "Enable Light Mode";
+            } else {
+                btn.innerText = "Enable Dark Mode";
+            }
+        });
+    </script>
+
+</body>
+</html>

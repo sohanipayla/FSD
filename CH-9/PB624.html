@@ -1,0 +1,19 @@
+<html>
+<body>
+    <h1 id="myHeading" onclick="changeHeading()">Click Me!</h1>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <script>
+        const heading = document.getElementById('myHeading');
+        // i. Change content, style to italic, and size
+        function changeHeading() {
+            heading.innerHTML = "<i>Hello World</i>";
+            heading.style.fontSize = "50px";
+        }
+        // ii.Change heading color based on which button is clicked
+        function changeColor(newColor) {
+            heading.style.color = newColor;
+        }
+    </script>
+</body>
+</html>

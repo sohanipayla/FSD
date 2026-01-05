@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+    <p class="section-text">A brief introduction.</p>
+    <p class="section-text">The main body.</p>
+    <p class="section-text">A concluding summary.</p>
+    <script>
+        function numberParagraphs() {
+            // 1. Select all paragraphs with the class "section-text"
+            const paragraphs = document.querySelectorAll('.section-text');
+            // 2. Loop through the collection
+            paragraphs.forEach((p, index) => {
+                // 3. Prepend number (index + 1 kyunki counting 1 se shuru karni hai)
+                p.innerText = (index + 1) + ". " + p.innerText;
+            });
+        }
+        numberParagraphs();
+    </script>
+</body>
+</html>
